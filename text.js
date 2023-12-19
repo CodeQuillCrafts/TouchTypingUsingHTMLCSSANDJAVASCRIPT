@@ -15,12 +15,7 @@ export function randomText() {
     return text[Math.floor(Math.random() * text.length)];
 }
 
-// export function Words() {
-//     let randomTextResult = randomText();
-//     return randomTextResult.replace(/[^a-zA-Z\s]/g, '').toLowerCase();
-// }
-
-// export function Wordsinup() {
-//     let randomTextResult = randomText();
-//     return randomTextResult.replace(/[^a-zA-Z\s]/g, '');
-// }
+export function Words() {
+    let randomTextResult = randomText();
+    return randomTextResult.replace(/[^a-zA-Z\s]/g, '');
+}

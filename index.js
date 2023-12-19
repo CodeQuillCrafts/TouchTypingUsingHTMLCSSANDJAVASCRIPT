@@ -17,5 +17,4 @@ let accuracy = results.querySelectorAll('input')[1];
 let mistakes = results.querySelectorAll('input')[2];
 let timeLeft = results.querySelectorAll('input')[3];
 
-// console.log(textModule.Words());
-// console.log(textModule.Wordsinup());
+reader.value = textModule.randomText();
