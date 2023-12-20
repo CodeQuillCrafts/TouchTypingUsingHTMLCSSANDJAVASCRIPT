@@ -44,18 +44,39 @@ body {
 
 .typingContainer {
     border: 2px solid rgba(0, 0, 0, 0.5);
-    height: 30vh;
-    width: 80vw;
-}
-
-.typingContainer input {
     outline: none;
     border: none;
     background: none;
+    height: 30vh;
+    width: 80vw;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: stretch;
+    position: relative;
+}
+
+.typingContainer p {
+    outline: none;
+    border: none;
+    background: none;
+    position: relative;
+    padding: 10px;
+    color: #fff;
+    font-size: 1.4rem;
+    overflow-x: hidden;
+    position: absolute;
+    word-break: break-all;
+}
+
+.typingContainer #reader {
+    z-index: -100;
+    opacity: 0.9;
+}
+
+.typingContainer #writer {
     color: green;
-    padding: 20px;
-    font-size: 1.5rem;
-    width: 100%;
 }
 
 .results {
