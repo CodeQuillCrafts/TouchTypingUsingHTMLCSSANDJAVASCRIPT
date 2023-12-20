@@ -1,4 +1,5 @@
 import * as textModule from './text.js';
+import './design.js';
 
 let options = document.querySelector('.options');
 let punctuation = options.querySelectorAll('span')[0];
@@ -22,11 +23,3 @@ reader.innerHTML = textModule.randomText();
 document.addEventListener('DOMContentLoaded', function () {
     writer.focus();
 })
-
-// writer.addEventListener('scroll', function () {
-//     // Check if the writer input is at the end
-//     if (writer.scrollLeft + writer.clientWidth >= writer.scrollWidth) {
-//         // Synchronize the reader input's scroll position
-//         reader.scrollLeft = writer.scrollLeft;
-//     }
-// });
