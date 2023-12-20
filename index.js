@@ -5,8 +5,9 @@ let options = document.querySelector('.options');
 let punctuation = options.querySelectorAll('span')[0];
 let numbers = options.querySelectorAll('span')[1];
 let time = options.querySelectorAll('span')[2];
-let quote = options.querySelectorAll('span')[3];
-let custom = options.querySelectorAll('span')[4];
+let words = options.querySelectorAll('span')[3];
+let quote = options.querySelectorAll('span')[4];
+let custom = options.querySelectorAll('span')[5];
 
 let typingContainer = document.querySelector('.typingContainer');
 let reader = typingContainer.querySelectorAll('p')[0];
@@ -23,3 +24,10 @@ reader.innerHTML = textModule.randomText();
 document.addEventListener('DOMContentLoaded', function () {
     writer.focus();
 })
+
+custom.addEventListener('click', function () {
+    console.log('clicked into custom');
+    reader.innerHTML = '';
+    reader.innerHTML = "The brown fox jumps over the lazy dog.";
+    writer.focus();
+});
